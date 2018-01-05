@@ -1,10 +1,12 @@
 * deps: mime@1.6.0
-  - Fix issue when building with webpack
-  - Add ES5 version ready in npm package
-  - Add support for extensions in mime-db (iWork - pages / numbers / etc.)
-  - Add support for mime/lite
-  - Fix missing `./Mime`
-  - Fix vulnerable regular expression
+  - update to mime-db@v1.31.0
+    * Add `application/raml+yaml` with extension `.raml`
+    * Add `application/wasm` with extension `.wasm`
+    * Add new `font` type from IANA
+    * Add new upstream font extensions
+    * Add new upstream MIME types
+    * Add extensions for JPEG-2000 images
+  - Use mime-score module to resolve extension conflicts.
 
 0.16.1 / 2017-09-29
 ===================
@@ -413,7 +415,6 @@
  * Support "If-Range" header
  * Control whether to generate etags
  * deps: mime@1.2.11
-  - Add mime-score module to resolve file extension conflicts
 
 0.2.0 / 2014-01-29
 ==================
